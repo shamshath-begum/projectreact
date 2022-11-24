@@ -28,42 +28,37 @@ function App() {
                         <div className="text-center">
                             {/*<!-- Product name-->*/}
                             <h5 className="fw-bolder">Fancy Product</h5>
-                            {/*<!-- Product Review-->*/}
-                            <div className='text-center'>
-                                <Rating name="full-rating" defaultValue={2} precision={1}/>
-                                </div>
+                            
 
                             {/*<!-- Product price-->*/}
-                            $ 400.00
+                            $40.00 - $80.00
                         </div>
                     </div>
                     {/*<!-- Product actions-->*/}
                     <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div className="text-center">
-                          {
-                            toggle1?<button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(++count);setToggle1(!toggle1)}}>Add to Cart</button>
-                            :
-                            <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(--count);setToggle1(!toggle1)}}>Remove</button>
-                          }
-                            </div>
+                            <button>View Options</button>
+                           </div>
                     </div>
                 </div>
             </div>
             <div className="col mb-5">
                 <div className="card h-100">
+                <div className="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                     {/*<!-- Product image-->*/}
                     <img className="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                     {/*<!-- Product details-->*/}
                     <div className="card-body p-4">
                         <div className="text-center">
                             {/*<!-- Product name-->*/}
-                            <h5 className="fw-bolder">Dairy Product</h5>
+                            <h5 className="fw-bolder">Special Item</h5>
                             {/*<!-- Product Review-->*/}
                             <div className='text-center'>
-                                <Rating name="full-rating" defaultValue={2} precision={1}/>
+                                <Rating name="full-rating" defaultValue={5} precision={1}/>
                                 </div>
                             {/*<!-- Product price-->*/}
-                            $ 400.00
+                            <span class="text-muted text-decoration-line-through">$20.00</span>
+                            $ 18.00
                         </div>
                     </div>
                     {/*<!-- Product actions-->*/}
@@ -77,6 +72,154 @@ function App() {
                             </div>
                     </div>
                 </div>
+            </div>
+            <div className="col mb-5">
+                <div className="card h-100">
+                    {/*<!-- Product image-->*/}
+                    <img className="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                    {/*<!-- Product details-->*/}
+                    <div className="card-body p-4">
+                        <div className="text-center">
+                            {/*<!-- Product name-->*/}
+                            <h5 className="fw-bolder">Sale Item</h5>
+                            
+                            {/*<!-- Product price-->*/}
+                            <span class="text-muted text-decoration-line-through">$50.00</span>
+                            $25.00
+                        </div>
+                    </div>
+                    {/*<!-- Product actions-->*/}
+                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div className="text-center">
+                        {
+                           toggle3? <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(++count);setToggle3(!toggle3)}}>Add to cart</button>
+                           :
+                           <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(--count);setToggle3(!toggle3)}}>Remove</button>
+                          }
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div className="col mb-5">
+                <div className="card h-100">
+                    {/*<!-- Product image-->*/}
+                    <img className="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                    {/*<!-- Product details-->*/}
+                    <div className="card-body p-4">
+                        <div className="text-center">
+                            {/*<!-- Product name-->*/}
+                            <h5 className="fw-bolder">Sationary Product</h5>
+                            {/*<!-- Product Review-->*/}
+                            <div className='text-center'>
+                                <Rating name="full-rating" defaultValue={2} precision={1}/>
+                                </div>
+                            {/*<!-- Product price-->*/}
+                            $ 200.00
+                        </div>
+                    </div>
+                    {/*<!-- Product actions-->*/}
+                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div className="text-center">
+                        {
+                           toggle3? <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(++count);setToggle3(!toggle3)}}>Add to Cart</button>
+                           :
+                           <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(--count);setToggle3(!toggle3)}}>Remove</button>
+                          }
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div className="col mb-5">
+                <div className="card h-100">
+                    {/*<!-- Product image-->*/}
+                    <img className="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                    {/*<!-- Product details-->*/}
+                    <div className="card-body p-4">
+                        <div className="text-center">
+                            {/*<!-- Product name-->*/}
+                            <h5 className="fw-bolder">Sationary Product</h5>
+                            {/*<!-- Product Review-->*/}
+                            <div className='text-center'>
+                                <Rating name="full-rating" defaultValue={2} precision={1}/>
+                                </div>
+                            {/*<!-- Product price-->*/}
+                            $ 200.00
+                        </div>
+                    </div>
+                    {/*<!-- Product actions-->*/}
+                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div className="text-center">
+                        {
+                           toggle3? <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(++count);setToggle3(!toggle3)}}>Add to Cart</button>
+                           :
+                           <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(--count);setToggle3(!toggle3)}}>Remove</button>
+                          }
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div className="col mb-5">
+                <div className="card h-100">
+                    {/*<!-- Product image-->*/}
+                    <img className="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                    {/*<!-- Product details-->*/}
+                    <div className="card-body p-4">
+                        <div className="text-center">
+                            {/*<!-- Product name-->*/}
+                            <h5 className="fw-bolder">Sationary Product</h5>
+                            {/*<!-- Product Review-->*/}
+                            <div className='text-center'>
+                                <Rating name="full-rating" defaultValue={2} precision={1}/>
+                                </div>
+                            {/*<!-- Product price-->*/}
+                            $ 200.00
+                        </div>
+                    </div>
+                    {/*<!-- Product actions-->*/}
+                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div className="text-center">
+                        {
+                           toggle3? <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(++count);setToggle3(!toggle3)}}>Add to Cart</button>
+                           :
+                           <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(--count);setToggle3(!toggle3)}}>Remove</button>
+                          }
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div className="col mb-5">
+                <div className="card h-100">
+                    {/*<!-- Product image-->*/}
+                    <img className="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                    {/*<!-- Product details-->*/}
+                    <div className="card-body p-4">
+                        <div className="text-center">
+                            {/*<!-- Product name-->*/}
+                            <h5 className="fw-bolder">Sationary Product</h5>
+                            {/*<!-- Product Review-->*/}
+                            <div className='text-center'>
+                                <Rating name="full-rating" defaultValue={2} precision={1}/>
+                                </div>
+                            {/*<!-- Product price-->*/}
+                            $ 200.00
+                        </div>
+                    </div>
+                    {/*<!-- Product actions-->*/}
+                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div className="text-center">
+                        {
+                           toggle3? <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(++count);setToggle3(!toggle3)}}>Add to Cart</button>
+                           :
+                           <button className='btn btn-outline-dark mt-auto'onClick={()=>{setCount(--count);setToggle3(!toggle3)}}>Remove</button>
+                          }
+                            
+                    </div>
+                </div>
+            </div>
             </div>
             <div className="col mb-5">
                 <div className="card h-100">
